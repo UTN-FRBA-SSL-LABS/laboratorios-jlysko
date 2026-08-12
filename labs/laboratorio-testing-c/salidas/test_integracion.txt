@@ -1,0 +1,11 @@
+=== Tests de integracion ===
+[carrito con descuento]
+  [OK]   carrito_total(&c) == 1300
+  [OK]   precio_descuento == 1170
+
+[carrito no supera la maxima capacidad]
+  [OK]   carrito_contar(&c) == 4
+  [OK]   carrito_agregar(&c, p) == 0
+  [OK]   carrito_contar(&c) == 4
+
+--- 5/5 tests OK ---
